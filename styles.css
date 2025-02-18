@@ -59,22 +59,22 @@ section h2 {
     border-radius: 8px;
 }
 
-.project h3 {
+.project h3 a {
     color: #ff9800; /* Amber orange for project titles */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .project p {
     color: #e6f2f5; /* Light cyan text for project description */
 }
 
-.project a {
-    color: #ff9800; /* Amber orange for project links */
-    text-decoration: none;
-    font-weight: bold;
-}
+ 
 
-.project a:hover {
+.project h3 a:hover {
     color: #ffeb3b; /* Yellow when hovered */
+    text-decoration: underline; /* Underline on hover to signal it's clickable */
 }
 
 /* Contact section styling */
