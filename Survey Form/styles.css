@@ -1,0 +1,119 @@
+form {
+    width: 90vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: .5em;
+  }
+  body {
+    background-image: url(https://cdn1.epicgames.com/offer/9773aa1aa54f4f7b80e44bef04986cea/EGS_RocketLeague_PsyonixLLC_S3_2560x1440-1434001758900f513cab0c885121744a);
+    padding: 10px;
+    width: auto;
+    margin-left:auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    background-color:rgba(27, 27, 50, 0.2);
+    color: #fC0fC0;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    }
+  h2{
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  input
+   {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  select{
+    margin:10px, 0, 0, 0;
+    width: auto;
+    min-height: 2em;
+    margin-left:160;
+    margin-top:20px;
+    background-color: #0cf4fc;
+  }
+  
+  input, textarea {
+    background-color: #0cf4fc;
+    border: 1px solid #0a0a23;
+    color: black;
+  }
+  
+  
+  label, textarea {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+  .background{
+    width: 80%;
+    background-color: #3b3b4f;;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+  }
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid;
+  }
+  .radio{
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    margin-left:-25px;
+  
+  }
+  input[type="radio"]{
+    margin-left:-220px;
+    min-height:0.5em;
+  }
+  input[type="checkbox"]{
+    margin-left:-220px;
+    min-height:0.5em;
+  }
+  input[id="pc"]{
+    text-align: left;
+    margin-left: 0px;
+    width:10%;
+  }
+  input[id="xbox"]{
+    text-align: left;
+    margin-left: 0px;
+    width:10%;
+  }
+  input[id="playstation"]{
+    text-align: left;
+    margin-left: 0px;
+    width:10%;
+  }
+  input[id="nintendo"]{
+    text-align: left;
+    margin-left: 0px;
+    width:10%;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #0cf4fc;
+    border-color: black;
+    min-width: 300px;
+  }

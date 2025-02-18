@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+    <h1 id="title">ChiLLikeCake's Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+
+<form id="survey-form">
+<fieldset>
+  <label id="name-label" for="name">Name:<input id="name" type="text" placeholder="Enter your name" class="inline"  required></input></label>
+  <label id="email-label" for="email">Email:<input id="email" type="email"placeholder="Enter your email" class="inline"  required></input></label>
+  <label id="number-label" for="number">Age:<input id="number" type="number" min="10" max="120"placeholder="Enter your age"class="inline"  required></input></label>
+  <select id="dropdown" name="dropdown">
+  <option value="">(What's your current rank?)</option>
+  <option value="1">Bronze</option>
+  <option value="2">Silver</option>
+  <option value="3">Gold</option>
+  <option value="4">Platinum</option>
+  <option value="5">Diamond</option>
+  <option value="6">Champion</option>
+  <option value="7">Grand Champion</option>
+  <option value="8">Super Sonic Legend</option>
+  </select>
+  </fieldset> 
+     <fieldset>
+       <h2> What system do you play on?</h2>
+    <label for="pc"><input id="pc" type="radio" name="account-type" class="radio" value="pc" />PC</label>
+         <label for="xbox"><input id="xbox" type="radio" name="account-type" class="radio" value="xbox" />XBOX</label>
+          <label for="playstation"><input id="playstation" type="radio" name="account-type" class="radio" value="playstation" />PlayStation</label>
+           <label for="nintendo"><input id="nintendo" type="radio" name="account-type" class="radio" value="nintendo" />Nintendo Switch</label>
+      </label>
+     </fieldset>
+        <fieldset>
+       <h2> Check the boxes of your current mechanics</h2>
+       <label for="playstation"><input id="playstation" type="checkbox" name="account-type" class="radio" value="half-flip" />Half-flip</label>
+       <label for="playstation"><input id="playstation" type="checkbox" name="account-type" class="radio" value="wavedash" />Wavedash</label>
+       <label for="playstation"><input id="playstation" type="checkbox" name="account-type" class="radio" value="ground_dribble" />Ground Dribble</label>
+       <label for="playstation"><input id="playstation" type="checkbox" name="account-type" class="radio" value="flicks" />Flicks</label>
+       <label for="playstation"><input id="playstation" type="checkbox" name="account-type" class="radio" value="air_dribble" />Air-Dribble</label>
+       <label for="playstation"><input id="playstation" type="checkbox" name="account-type" class="radio" value="ceiling_shots"  />Ceiling Shots</label>
+       <label for="playstation"><input id="playstation" type="checkbox" name="account-type" class="radio" value="flip_resets" />Flip-Reset</label>
+       
+   
+
+ </fieldset>
+ <fieldset>
+     <label for="bio">Any comments or questions:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+       </form>
+  </div>
+  </body>
+</html>
