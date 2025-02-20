@@ -8,15 +8,17 @@
 
 /* Body Styling */
 body {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #0a1d2e;
+    color: #e6f2f5;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     padding: 20px;
 }
 
 /* Header */
 header {
-    margin-bottom: 40px;
+    
+    margin-bottom: 15px;
 }
 
 h1 {
@@ -106,4 +108,67 @@ h2 {
     .project-list {
         grid-template-columns: 1fr; /* 1 per row on mobile */
     }
+}
+/* Link styles */
+a {
+    color: #ff9800; /* Amber orange for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffeb3b; /* Yellow when hovered */
+}
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: #ff9800; /* Amber orange for links in navigation */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Yellow when hovered */
+    text-decoration: underline; /* Underline for better visibility */
+}
+/* Add more space between About Me and My Projects */
+#about {
+    margin-bottom: 40px; /* Increased margin-bottom for more space */
+}
+/* Contact section styling */
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    color: #ff9800; /* Amber orange for contact links */
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    color: #ffeb3b; /* Yellow when hovered */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a1d2e; /* Deep blue footer background */
+    color: #e6f2f5; /* Light cyan text */
+}
+
+footer p {
+    margin: 0;
 }
