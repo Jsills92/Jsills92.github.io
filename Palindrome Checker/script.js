@@ -21,3 +21,5 @@ document.getElementById("check-btn").addEventListener("click", function() {
     result.innerHTML = `${userInput} is not a palindrome`;
   }
 });
+
+//Need to fix the check button
