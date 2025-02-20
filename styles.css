@@ -1,117 +1,95 @@
-/* Body and general background */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
 body {
-    background-color: #0a1d2e; /* Deep blue background */
-    color: #e6f2f5; /* Light cyan text */
-    font-family: 'Arial', sans-serif;
-}
-
-/* Link styles */
-a {
-    color: #ff9800; /* Amber orange for links */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #ffeb3b; /* Yellow when hovered */
-}
-
-/* Header styling */
-header {
-    background-color: #0a1d2e; /* Deep blue header */
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
     padding: 20px;
 }
 
-/* Navigation styling */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    font-size: 18px;
-}
-
-nav ul li a {
-    color: #ff9800; /* Amber orange for links in navigation */
-}
-
-/* Section styling */
-section {
-    padding: 40px 20px;
-    margin-bottom: 20px;
-}
-
-section h2 {
-    color: #ffffff; /* White headers for sections */
-}
-
-/* Project list styling */
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    align-items: stretch;
+/* Header */
+header {
     margin-bottom: 40px;
 }
 
+h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Project Section */
+.project-section {
+    margin-bottom: 50px; /* Space between project sections */
+}
+
+.project-section h3 {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Project Grid */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Always 5 per row */
+    gap: 20px;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+/* Individual Project Card */
 .project {
-    background-color: #1d1f21; /* Dark background for each project */
+    background-color: #1d1f21;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.project h3 a {
-    color: #ff9800; /* Amber orange for project titles */
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Project Title */
+.project h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Project Links */
+.project a {
     text-decoration: none;
+    color: #00bcd4;
     font-weight: bold;
-    font-size: 22px;
 }
 
-.project p {
-    color: #e6f2f5; /* Light cyan text for project description */
+.project a:hover {
+    color: #ff9800;
 }
 
- 
-
-.project h3 a:hover {
-    color: #ffeb3b; /* Yellow when hovered */
-    text-decoration: underline; /* Underline on hover to signal it's clickable */
-}
-
-/* Contact section styling */
-#contact ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#contact ul li {
-    margin: 10px 0;
-}
-
-#contact ul li a {
-    color: #ff9800; /* Amber orange for contact links */
-    text-decoration: none;
-}
-
-#contact ul li a:hover {
-    color: #ffeb3b; /* Yellow when hovered */
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #0a1d2e; /* Deep blue footer background */
-    color: #e6f2f5; /* Light cyan text */
-}
-
-footer p {
-    margin: 0;
-}
-
+/* Responsive Grid Adjustments */
 @media (max-width: 1200px) {
     .project-list {
         grid-template-columns: repeat(3, 1fr); /* 3 per row on medium screens */
@@ -129,5 +107,3 @@ footer p {
         grid-template-columns: 1fr; /* 1 per row on mobile */
     }
 }
-
-
