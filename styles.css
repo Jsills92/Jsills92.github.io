@@ -49,8 +49,9 @@ section h2 {
 /* Project list styling */
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(5, 1fr); /* Forces 5 columns */
     gap: 20px;
+    align-items: stretch;
 }
 
 .project {
@@ -107,6 +108,7 @@ footer {
 footer p {
     margin: 0;
 }
+
 @media (max-width: 1200px) {
     .project-list {
         grid-template-columns: repeat(3, 1fr); /* 3 per row on medium screens */
@@ -115,7 +117,7 @@ footer p {
 
 @media (max-width: 768px) {
     .project-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 per row on smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on small screens */
     }
 }
 
@@ -124,4 +126,5 @@ footer p {
         grid-template-columns: 1fr; /* 1 per row on mobile */
     }
 }
+
 
