@@ -24,6 +24,7 @@ header {
 h1 {
     font-size: 2.5rem;
     color: #00bcd4;
+    text-align: center;
 }
 
 /* Section Titles */
@@ -54,7 +55,9 @@ h2 {
     gap: 20px;
     align-items: stretch;
     justify-content: center;
+    width: 100%;
     padding: 0 10px;
+
 }
 
 /* Individual Project Card */
@@ -72,6 +75,7 @@ h2 {
 
 .project:hover {
     transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 188, 212, 0.5);
 }
 
 /* Project Title */
@@ -85,6 +89,8 @@ h2 {
     text-decoration: none;
     color: #00bcd4;
     font-weight: bold;
+    display: block;
+    text-align: center;
 }
 
 .project a:hover {
@@ -123,6 +129,8 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -164,7 +172,7 @@ nav ul li a:hover {
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #0a1d2e; /* Deep blue footer background */
     color: #e6f2f5; /* Light cyan text */
 }
@@ -172,3 +180,53 @@ footer {
 footer p {
     margin: 0;
 }
+
+.project p {
+    flex-grow: 1; /* Makes descriptions take up equal space */
+    display: flex;
+    align-items: flex-start; /* Pushes text to bottom for alignment */
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Skills Section */
+#skills {
+    margin: 40px 0;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+/* Progress Bar Container */
+.progress-bar {
+    background-color: #333;
+    border-radius: 25px;
+    width: 100%;
+    height: 20px;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+/* Progress Bar Fill */
+.progress {
+    height: 100%;
+    background-color: #00bcd4;
+    width: 0%; /* Starts at 0%, will animate */
+    border-radius: 25px;
+    transition: width 2s ease-out; /* Ensure smooth transition */
+}
+
