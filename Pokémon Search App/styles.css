@@ -1,0 +1,267 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+}
+
+/* Project styling */
+
+body {
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #FFDE00; /* Pikachu's body color */
+  color: #3B4CCA; /* Pokémon blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Game Boy screen container */
+.gameboy-screen {
+  width: 400px;
+  height: 600px;
+  background-color: #2A75BB; /* Darker Pokémon blue */
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #FFDE10; /* Pikachu's body color */
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.freecodecamp-logo {
+  height: 30px;
+  margin: 15px 0;
+}
+
+h1 {
+  color: #2A75BB; /* Darker Pokémon blue */
+  font-size: 1.5em;
+}
+
+.container {
+  width: 100%;
+  margin: 15px 0;
+}
+
+#search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+label {
+  align-self: center;
+  color: #2A75BB; /* Darker Pokémon blue */
+}
+
+#search-input,
+#search-button {
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+#search-input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+#search-button {
+  background-color: #FFCC00; /* Slightly darker Pikachu yellow */
+  color: #3B4CCA; /* Pokémon blue */
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #FFB400; /* Even darker Pikachu yellow */
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.top-container,
+.bottom-container {
+  width: 100%;
+}
+
+.name-and-id,
+.size {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  color: #3B4CCA; /* Pokémon blue */
+}
+
+.sprite-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Game Boy D-Pad and Buttons */
+.gamepad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 25px;
+}
+
+.dpad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  
+}
+
+.dpad div {
+  width: 30px;
+  height: 30px;
+  background-color: #2A75BB; /* Pokémon blue */
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.dpad .up {
+  transform: rotate(0deg);
+}
+
+.dpad .down {
+  transform: rotate(180deg);
+}
+
+.dpad .left {
+  transform: rotate(90deg);
+}
+
+.dpad .right {
+  transform: rotate(270deg);
+}
+
+/* Fix the layout of D-pad buttons */
+.dpad {
+  position: relative;
+}
+
+.dpad .up, .dpad .down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dpad .up {
+  top: -35px; /* Position up above the center */
+}
+
+.dpad .down {
+  bottom: -35px; /* Position down below the center */
+}
+
+.dpad .left, .dpad .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dpad .left {
+  left: -35px; /* Position left to the left of the center */
+}
+
+.dpad .right {
+  right: -40px; /* Position right to the right of the center */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  background-color: #2A75BB; /* Pokémon blue */
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3B4CCA; /* Slightly darker Pokémon blue */
+}
+
+
+.pikachu-animation {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.pikachu-animation img {
+  width: 150px;
+  transform-origin: center;
+  animation: tail-wag 0.5s infinite alternate;
+}
+
+@keyframes tail-wag {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
